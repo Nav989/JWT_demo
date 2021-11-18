@@ -113,35 +113,3 @@ app.listen(4000,()=>{
 })
 
 
-
-// const verifyToken =(req,res,next)=>{
-
-//     const bearerHeaders=req.headers["Authorization"]; 
-
-// //   console.log(bearer[1]);
-// //   req.token=bearer[1];
- 
-
-//     if(typeof bearerHeaders !== "undefined"){
-      
-//       res.send("authorized");
-
-
-//     // const bearer=bearerHeaders.split()
-
-//     // console.log(bearer[1]);
-//     // req.token=bearer[1];
-
-//     //   jwt.verify(req.token,jwtkey,(err,authdata)=>{
-//     //     if(err)throw err;
-//     //     next();
-//     // })
-
-//     }else{
-//         res.send({message:"authorization not define"})
-
-//     }
-// }
-
-
-
