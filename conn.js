@@ -67,7 +67,7 @@ function verifyT(req,res,next){
     const bearerHeader =req.headers['authorization']
 
     if(typeof bearerHeader!== "undefined"){
-        const bearerToken=bearerHeader.split(' ')[2]
+        const bearerToken=bearerHeader.split(' ')[1]
         req.token = bearerToken
         next()
     }
@@ -84,7 +84,7 @@ app.post('/login/users',verifyT,(req,res)=>{
 
 //    res.status(400).json({message:"error"})
 
-const token = req.token;
+const token = req.body;
     console.log('token: ' + token);
 
 
